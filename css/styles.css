@@ -558,6 +558,59 @@ header {
   fill: #f4f4fd;
 }
 
+.subscribe-container {
+  display: flex;
+}
+
+.subscribe-title {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+  padding-bottom: 16px;
+}
+
+.subscribe-email {
+  background-color: transparent;
+  width: 264px;
+  height: 40px;
+  padding-left: 16px;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  margin-right: 24px;
+}
+
+.subscribe-button {
+  background: #4d5ae5;
+  border-radius: 4px;
+  padding: 8px 24px;
+  border: none;
+  box-shadow: none;
+  transition-property: background-color;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.subscribe-button-text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
+
+.email-icon-subscribe {
+  margin-left: 16px;
+}
+
 /* portfolio */
 
 .portfolio-section {
