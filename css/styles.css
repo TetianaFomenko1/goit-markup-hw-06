@@ -765,15 +765,19 @@ header {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
+  padding-top: 72px;
+  padding-right: 24px;
+  padding-bottom: 24px;
+  padding-left: 24px;
   transform: translate(-50%, -50%) scale(1);
   transition: translate 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .modal-close {
+  position: absolute;
+  top: 24px;
+  right: 24px;
   display: flex;
-  margin-left: auto;
-  margin-right: 24px;
-  margin-top: 24px;
   border-radius: 50%;
   border: 1px solid rgba(0, 0, 0, 0.1);
   width: 24px;
@@ -799,16 +803,14 @@ header {
 .modal-form {
   display: flex;
   flex-direction: column;
-  padding-left: 24px;
-  padding-right: 24px;
 }
 
 .modal-title {
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
-  line-height: 24px;
-  margin-top: 24px;
+  line-height: 1.5em;
+
   margin-bottom: 16px;
 
   text-align: center;
@@ -857,16 +859,9 @@ header {
   fill: #4d5ae5;
 }
 
-/* .modal-input:not(focus):not(:placeholder-shown):required:valid {
-  border-color: rgb(84, 191, 84);
-}
-
-.modal-input:not(focus):not(:placeholder-shown):required:invalid {
-  border-color: rgb(207, 84, 84);
-} */
-
 .modal-span {
   display: flex;
+  margin-bottom: 4px;
   margin-top: 8px;
 }
 
@@ -880,12 +875,21 @@ header {
 
 .modal-icon {
   position: absolute;
+  top: 8px;
   left: 16px;
-  top: 21%;
-  transform: translate(-50%);
+}
+
+.modal-field {
+  margin-top: 16px;
+}
+
+.modal-field input[type="checkbox"] {
+  display: none;
 }
 
 .label-privacy {
+  display: inline-block;
+  position: relative;
   font-size: 12px;
   line-height: 1.17;
   letter-spacing: 0.04em;
@@ -893,6 +897,7 @@ header {
   display: flex;
   margin-top: 16px;
   margin-bottom: 24px;
+  cursor: pointer;
 }
 
 .link-privacy {
@@ -900,14 +905,14 @@ header {
 }
 
 .label-privacy span {
+  position: absolute;
+  left: 20px;
+  top: 55px;
   width: 16px;
   height: 16px;
+  background: #404bbf;
   border: 1px solid rgba(46, 47, 66, 0.4);
   border-radius: 2px;
-  margin-right: 8px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 
 .send-button {
