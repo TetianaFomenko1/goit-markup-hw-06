@@ -558,8 +558,16 @@ header {
   fill: #f4f4fd;
 }
 
+.subscribe-form {
+  display: flex;
+  align-items: center;
+}
+
 .subscribe-container {
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-left: -40px;
 }
 
 .subscribe-title {
@@ -569,7 +577,8 @@ header {
   line-height: 1.5;
   letter-spacing: 0.02em;
   color: #ffffff;
-  padding-bottom: 16px;
+  margin-bottom: 16px;
+  margin-right: auto;
 }
 
 .subscribe-email {
@@ -585,6 +594,15 @@ header {
 }
 
 .subscribe-button {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.04em;
+  color: #ffffff;
   background: #4d5ae5;
   border-radius: 4px;
   padding: 8px 24px;
@@ -600,20 +618,12 @@ header {
   background-color: #404bbf;
 }
 
-.subscribe-button-text {
-  font-style: normal;
-  font-weight: 500;
-  font-size: 16px;
-  line-height: 24px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  letter-spacing: 0.04em;
-  color: #ffffff;
-}
-
 .email-icon-subscribe {
   margin-left: 16px;
+}
+
+.subscribe-email::placeholder {
+  color: #ffffff;
 }
 
 /* portfolio */
@@ -895,8 +905,6 @@ header {
   letter-spacing: 0.04em;
   color: #8e8f99;
   display: flex;
-  margin-top: 16px;
-  margin-bottom: 24px;
   cursor: pointer;
 }
 
