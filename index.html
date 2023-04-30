@@ -132,24 +132,24 @@
                   id="user-comment"
                   rows="5"
                   placeholder="Text input"
-                  class="modal-input-comment modal-input"
+                  class="modal-input-comment"
                 ></textarea>
               </label>
 
-              <div class="modal-field">
-                <span class="custom-checkbox"></span>
-                <label for="privacy" class="label-privacy">
-                  <input
-                    type="checkbox"
-                    name="privacy"
-                    id="privacy"
-                    class="input-check visually-hidden"
-                    value="true"
-                  />
-                  &nbsp; I accept the terms and conditions of the &nbsp;
-                  <a href="" class="link-privacy">Privacy Policy</a>
-                </label>
-              </div>
+              <label class="modal-form-field policy">
+                <input
+                  type="checkbox"
+                  name="user_policy"
+                  class="modal-form-check"
+                />
+                <span>
+                  <svg class="modal-form-check-icon">
+                    <use href="./images/icons.svg.svg#icon-Vector"></use>
+                  </svg>
+                </span>
+                I accept the terms and conditions of the&nbsp;
+                <a href="#">Privacy Policy</a>
+              </label>
 
               <button type="submit" class="send-button">Send</button>
             </form>
