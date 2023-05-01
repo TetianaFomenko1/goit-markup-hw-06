@@ -587,6 +587,11 @@ header {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;
   margin-right: 24px;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 .subscribe-button {
@@ -620,6 +625,11 @@ header {
 
 .subscribe-email::placeholder {
   color: #ffffff;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  letter-spacing: 0.04em;
 }
 
 /* portfolio */
@@ -827,7 +837,6 @@ header {
 
 .input-wrap {
   position: relative;
-  display: flex;
 }
 
 .modal-input {
@@ -868,7 +877,6 @@ header {
 
 .modal-span {
   display: flex;
-  margin-bottom: 4px;
 }
 
 .modal-label {
@@ -877,6 +885,7 @@ header {
   line-height: 14px;
   letter-spacing: 0.04em;
   color: #8e8f99;
+  margin-bottom: 4px;
 }
 
 .modal-label:not(:first-child) {
